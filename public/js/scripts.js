@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:3000/api/elementos";
+const API_URL = "/api/elementos";
 
 const obtenerElementos = async () => {
     try {
