@@ -1,10 +1,19 @@
 {
   "short_name": "Bodega",
-  "name": "Sistema de Control Bodega",
+  "name": "Sistema de Control Bodega Guaicaramo",
+  "description": "Sistema para el control y registro de elementos de la bodega de Guaicaramo SAS.",
+  "lang": "es-ES",
+  "dir": "ltr",
   "icons": [
     {
       "src": "/public/assets/images.jpg",
       "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/public/assets/images.jpg",
+      "sizes": "512x512",
       "type": "image/jpeg",
       "purpose": "any maskable"
     }
