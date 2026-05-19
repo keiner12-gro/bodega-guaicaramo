@@ -1,0 +1,11 @@
+[
+  {
+    "cantidad": "10",
+    "descripcion": "Prueba",
+    "marca": "Dell",
+    "serial": "12345",
+    "placa": "P1",
+    "fechaIngreso": "2023-10-01",
+    "id": 1
+  }
+]

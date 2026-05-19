@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="public/css/styles.css">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#16324f">
+    <title>Guaicaramo SAS</title>
+</head>
+<body>
+    <div class="contenedor menu-contenedor w-full max-w-sm bg-neutral-primary-soft p-6 border border-default rounded-base shadow-xs">
+        <div class="titulo-principal">
+            <h1>GUAICARAMO SAS</h1>
+            <p>AREA TICS</p>
+        </div>
+
+        <div class="menu-desplegable">
+            <button type="button" class="boton-menu">Menu</button>
+
+            <div class="opciones-menu">
+                <a href="public/views/registro.html">Registrar</a>
+                <a href="public/views/elementos.html">Elementos</a>
+                <a href="public/views/consultar_pro.html">Consultar elementos</a>
+                <a href="public/views/eliminar_pro.html">Eliminar elementos</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(reg => console.log('Service Worker registrado', reg))
+                    .catch(err => console.error('Error al registrar Service Worker', err));
+            });
+        }
+    </script>
+</body>
+</html>
